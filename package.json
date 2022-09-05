@@ -1,0 +1,23 @@
+{
+  "name": "prisma-enum",
+  "version": "1.0.0",
+  "description": "CLI tool for exporting enums from @prisma/client to reduce bundle size.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "author": "Richard Xiong",
+  "license": "MIT",
+  "dependencies": {
+    "nanospinner": "^1.1.0"
+  },
+  "scripts": {
+    "prepare": "yarn build",
+    "build": "tsc"
+  },
+  "bin": "dist/run.js",
+  "devDependencies": {
+    "@types/node": "^18.7.15"
+  },
+  "files": [
+    "dist"
+  ]
+}
