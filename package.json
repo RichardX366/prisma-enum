@@ -1,6 +1,6 @@
 {
   "name": "prisma-enum",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "CLI tool for exporting enums from @prisma/client to reduce bundle size.",
   "main": "index.js",
   "types": "index.d.ts",
