@@ -9,11 +9,7 @@
   "dependencies": {
     "nanospinner": "^1.1.0"
   },
-  "scripts": {
-    "prepare": "yarn build",
-    "build": "tsc"
-  },
-  "bin": "dist/run.js",
+  "bin": "run.js",
   "devDependencies": {
     "@types/node": "^18.7.15"
   },
