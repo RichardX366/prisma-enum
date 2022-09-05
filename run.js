@@ -19,9 +19,11 @@ writeFileSync(
 const enumJS = prismaText
   .split('exports.Prisma.ModelName')[0]
   .split('exports.Prisma');
+console.log(enumJS);
 writeFileSync(
   './node_modules/prisma-enum/index.js',
-  enumJS[enumJS.length - 1].split('});').slice(1).join('});'),
+  `function makeEnum(x) { return x; }
+${enumJS[enumJS.length - 1].split('});').slice(1).join('});')}`,
 );
 spinner.success();
 
